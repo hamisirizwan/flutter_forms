@@ -38,13 +38,33 @@ class _LoginPageState extends State<LoginPage> {
               ),
               ElevatedButton(
                   onPressed: () {
-                    if (_authorcontroller.text == "") {
+                    if (_authorcontroller.text == "" ||
+                        _titlecontroller.text == "") {
+                      final snackBar = SnackBar(
+                        content: Row(
+                          children: [
+                            Icon(Icons.error),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "all fiedld should be filled",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        backgroundColor: Colors.amber[200],
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
                       print("enter something");
                     }
                     print(_authorcontroller.text);
-                    setState(() {
-                      _authorcontroller.text = "";
-                    });
+                    // setState(() {
+                    //   _authorcontroller.text = "";
+                    // });
                   },
                   child: Text("SUBMIT"))
             ],

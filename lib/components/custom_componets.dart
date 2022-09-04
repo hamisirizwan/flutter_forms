@@ -28,3 +28,29 @@ class SecondCustomButton extends StatelessWidget {
     );
   }
 }
+
+// class CustomErrorAlert extends StatelessWidget {
+//   // const CustomErrorAlert({ Key? key }) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return SnackBar(
+//       content: Row(
+//         children: [
+//           Icon(Icons.error),
+//           SizedBox(
+//             width: 20,
+//           ),
+//           Text(
+//             "enter something",
+//             style: TextStyle(
+//                 color: Colors.black,
+//                 fontSize: 20.0,
+//                 fontWeight: FontWeight.bold),
+//           ),
+//         ],
+//       ),
+//       backgroundColor: Colors.amber[200],
+//     );
+//   }
+// }
