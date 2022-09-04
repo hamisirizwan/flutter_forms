@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                               width: 20,
                             ),
                             Text(
-                              "all fiedld should be filled",
+                              "all fields should be filled",
                               style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 20.0,
